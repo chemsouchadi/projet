@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Login Page</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required placeholder="ALGERIA"><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required placeholder="GAZA"><br>
+
+            <button type="submit">Login</button>
+            <a id="forgotPassword">Forgot Password?</a>
+            <a href="sign up.html">I Don't Have account</a>
+        </form>
+        <p id="message"></p>
+    </div>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+
+            if (username === "ALGERIA" && password === "GAZA") {
+
+                window.location.href = "Donation.html";
+            } else {
+
+                document.getElementById("message").textContent = "Invalid username or password.";
+            }
+        });
+    </script>
+
+</body>
+
+</html>

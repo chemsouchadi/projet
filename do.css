@@ -1,0 +1,90 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set body font and background color */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f7fafc;
+}
+
+/* Center the container and add some padding */
+.container {
+    max-width: 30rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Style form elements */
+form {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #4a5568;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 6rem;
+}
+
+button {
+    background-color: #4299e1;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3182ce;
+}
+
+/* Style output section */
+#output {
+    background-color: #fefcbf;
+    border-left: 0.25rem solid #f6e05e;
+    color: #f59e0b;
+    padding: 1rem;
+    margin-top: 2rem;
+    min-height: 100px;
+}
+
+/* Style footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.75rem;
+    color: #4a5568;
+}
+
+footer a {
+    color: #4a5568;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
